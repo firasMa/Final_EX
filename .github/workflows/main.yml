@@ -1,7 +1,7 @@
 name: Final_Ex
 
-#env:
-#  SHA_KEY: "$({ github.sha })"
+env:
+  GLOBAL_FIRST_NAME: "Firas"
 
 on:
   push:
@@ -43,3 +43,15 @@ jobs:
       
     - name: run test.sh
       run: bash test.sh
+    
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: Print First Name using env 
+        run: echo "my name is ${{ env.GLOBAL_FIRST_NAME }}"
+      
+      - name: Print Last Name by using local
+        run: echo "my last name is $LOCAL_LAST_NAME "
+        env:
+          LOCAL_LAST_NAME: "Mahroom"
