@@ -12,4 +12,4 @@ jobs:
     
     steps:
     - name: print hellow
-    run: echo "Hello"
+      run: echo "Hello"
