@@ -1,0 +1,15 @@
+name: Final_Ex
+
+on:
+  push:
+    branches:
+      - main
+      
+jobs:
+
+  job1:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: print hellow
+    run: echo "Hello"
