@@ -1,6 +1,6 @@
 name: Final_Ex
 env:
-  last_sha: "$({ github.sha })"
+  last_sha: $({ github.sha })
 
 on:
   push:
