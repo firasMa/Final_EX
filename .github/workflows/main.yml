@@ -9,7 +9,12 @@ jobs:
 
   job1:
     runs-on: ubuntu-latest
-    
     steps:
+    - name: Print Hello msg
+      run: echo "Hello"
+
     - name: ubuntu version
       run: cat /etc/lsb-release
+    
+    - name: print SHA key
+      run: echo $ ({ github.sha})
