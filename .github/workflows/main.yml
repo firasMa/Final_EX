@@ -37,3 +37,9 @@ jobs:
     
     - name: ls -la
       run: ls -la
+      
+    - name: print all files
+      run: cat *.txt
+      
+    - name: run test.sh
+      run: bash test.sh
