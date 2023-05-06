@@ -1,6 +1,7 @@
 name: Final_Ex
-env:
-  SHA_KEY: "$({ github.sha })"
+
+#env:
+#  SHA_KEY: "$({ github.sha })"
 
 on:
   push:
@@ -20,7 +21,7 @@ jobs:
       run: cat /etc/lsb-release
     
     - name: print SHA key
-      run: echo "$({ github.sha })"
+      run: echo "sha_key_$({ github.sha })"
     
-    - name: print 2 sha
-      run: echo "$({ env.SHA_KEY })"
+#    - name: print 2 sha
+#      run: echo "$({ env.SHA_KEY })"
