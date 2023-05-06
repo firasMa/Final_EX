@@ -20,8 +20,8 @@ jobs:
     - name: ubuntu version
       run: cat /etc/lsb-release
       
-#    - name: print SHA key
-#      run: echo "sha_key_$({ github.sha })"
+    - name: print SHA key
+      run: echo "sha_key_${{ github.sha }}"
     
 #    - name: print 2 sha
 #      run: echo "$({ env.SHA_KEY })"
