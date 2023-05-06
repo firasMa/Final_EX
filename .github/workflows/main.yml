@@ -1,6 +1,6 @@
 name: Final_Ex
 env:
-  last_sha: $({ github.sha })
+  SHA_KEY: "$({ github.sha })"
 
 on:
   push:
@@ -23,4 +23,4 @@ jobs:
       run: echo "$({ github.sha })"
     
     - name: print 2 sha
-      run: echo "$({ env.last_sha })
+      run: echo "$({ env.SHA_KEY })"
