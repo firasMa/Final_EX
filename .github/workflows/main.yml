@@ -20,7 +20,7 @@ jobs:
       run: cat /etc/lsb-release
     
     - name: print SHA key
-      run: echo "$({ github.sha})"
+      run: echo "$({ github.sha })"
     
     - name: print 2 sha
-      run: echo "$({env.last_sha})
+      run: echo "$({ env.last_sha })
