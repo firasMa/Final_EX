@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: print hellow
-      run: echo "Hello"
+    - name: ls -la
+      run: ls -la
