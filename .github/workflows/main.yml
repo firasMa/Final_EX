@@ -1,4 +1,6 @@
 name: Final_Ex
+env:
+  last_sha: "$({github.sha})"
 
 on:
   push:
@@ -10,6 +12,7 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
+    
     - name: Print Hello msg
       run: echo "Hello"
 
@@ -17,4 +20,7 @@ jobs:
       run: cat /etc/lsb-release
     
     - name: print SHA key
-      run: echo $ ({ github.sha})
+      run: echo "$({ github.sha})"
+    
+    - name: print 2 sha
+      run: echo "$({env.last_sha})
