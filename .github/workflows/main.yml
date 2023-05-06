@@ -23,17 +23,15 @@ jobs:
     - name: print SHA key
       run: echo "sha_key_${{ github.sha }}"
     
-#    - name: print 2 sha
-#      run: echo "$({ env.SHA_KEY })"
   
   job2:
     runs-on: ubuntu-latest
     steps:
     
     - uses: actions/checkout@v3
-      with:
-        fetch-depth: 2
-    - run: git checkout HEAD^
+    #  with:
+    #    fetch-depth: 2
+    #- run: git checkout HEAD^
     
     - name: ls -la
       run: ls -la
