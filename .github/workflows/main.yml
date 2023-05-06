@@ -27,7 +27,7 @@ jobs:
 #      run: echo "$({ env.SHA_KEY })"
   
   job2:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     
     - name: Git clone
